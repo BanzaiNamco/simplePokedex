@@ -2,24 +2,31 @@
 <html>
 <head>
     <title>Pokedex</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/generic.css">
+    <link rel="stylesheet" type="text/css" href="/css/pokemonCards.css">
     <link rel="stylesheet" type="text/css" href="/css/typeColors.css">
+    <link rel="stylesheet" type="text/css" href="/css/nav.css">
     
     <!-- Scripts -->
+    <script src="/js/fetchFromAPI.js"></script>
     <script src="/js/pokedex.js"></script>
+    <script src="/js/search.js"></script>
 </head>
 <body>
-    <div class = "flexbox">
-        <h1>Pokedex</h1>
+    <nav>
+        <a href = "/"><h1>Pokedex</h1></a>
         <form id = "search-form">
             <input type = "text" id = "search" placeholder = "Search Pokemon" autocomplete="off">
             <button type = "submit">Search</button>
         </form>
         <select id = "sort-pokedex" autocomplete="off">
-            <option value = "id" default selected>Sort by ID</option>
-            <option value = "name">Sort by Name</option>
+            <option value = "idasc" default selected>Sort by ID (Ascending)</option>
+            <option value = "iddesc">Sort by ID (Descending)</option>
+            <option value = "nameasc">Sort by Name (A-Z)</option>
+            <option value = "namedesc">Sort by Name (Z-A)</option>
         </select>
-        <br>
+    </nav>
+    <div class = "flexbox">
         <div id = "pokemon-container">
             
         </div>
