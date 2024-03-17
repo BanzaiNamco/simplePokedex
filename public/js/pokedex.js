@@ -65,7 +65,31 @@ function sortPokedex(clearContainer = false){
 }
 
 function sortPokedexByName_AllPoke(clearContainer = false){
-  
+    const container = document.getElementById("pokemon-container");
+    if (clearContainer) { 
+        container.innerHTML = "";
+        pokemonList = [];
+        getPokemon(0, 10000).then(data => {
+            pokemonList = pokemonList.concat(data.results);
+            // remove pokemon with "-" in their name
+            pokemonList = pokemonList.filter(pokemon => !pokemon.name.includes("-"));
+            pokemonList.sort((a, b) => a.name.localeCompare(b.name));
+            console.log(pokemonList);
+            const listToLoad = pokemonList.slice(pokedexOffset, pokedexOffset + 10);
+            const promises = listToLoad.map((pokemon) => createCard(pokemon));
+            Promise.all(promises).then(cards => {
+                cards.forEach(card => container.innerHTML += card);
+            });
+        });
+    } else {
+        const listToLoad = pokemonList.slice(pokedexOffset, pokedexOffset + 10);
+        const promises = listToLoad.map((pokemon) => createCard(pokemon));
+        Promise.all(promises).then(cards => {
+            cards.forEach(card => container.innerHTML += card);
+        });
+    }
+    
+    
 }
 
 async function getPokemon(offset, limit = 10) {
