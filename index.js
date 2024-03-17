@@ -1,5 +1,4 @@
 import express from 'express';
-import cors from 'cors';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -9,22 +8,12 @@ const app = express();
 
 app.use(express.static('public'));
 
-const corsOptions = {
-    origin: '*',
-    optionsSuccessStatus: 200,
-    credentials: true
-}
-
-app.use(cors(corsOptions));
-
-
-
 app.get ("/", (req, res) => {
     res.sendFile('index.html', { root: path.join(__dirname, './public/html') });
 });
 
-app.get ("/test", (req, res) => {
-    res.sendFile('test.html', { root: path.join(__dirname, './public/html') });
+app.get ("/pokemon", (req, res) => {
+    res.sendFile('pokemonDetails.html', { root: path.join(__dirname, './public/html') });
 });
 
 const port = 3000;
