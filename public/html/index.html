@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pokedex</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/typeColors.css">
+    
+    <!-- Scripts -->
+    <script src="/js/pokedex.js"></script>
+</head>
+<body>
+    <div class = "flexbox">
+        <h1>Pokedex</h1>
+        <form id = "search-form">
+            <input type = "text" id = "search" placeholder = "Search Pokemon" autocomplete="off">
+            <button type = "submit">Search</button>
+        </form>
+        <select id = "sort-pokedex" autocomplete="off">
+            <option value = "id" default selected>Sort by ID</option>
+            <option value = "name">Sort by Name</option>
+        </select>
+        <br>
+        <div id = "pokemon-container">
+            
+        </div>
+        <div>
+            <button id = "show-more">Show More</button>
+        </div> 
+    </div>
+</body>
+</html>
