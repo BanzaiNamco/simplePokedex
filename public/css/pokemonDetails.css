@@ -1,0 +1,213 @@
+#entryContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+#pokemon-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    border-radius: 20px;
+    padding: 1rem;
+    background-color: rgb(226, 217, 217);
+}
+
+#firstlayer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#firstlayer button {
+    background-color: #3D7DCA;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+}
+
+#basicInfo {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#pokemon-image, #secondlayerRight {
+    width: 50%;
+}
+
+#pokemon-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+#secondlayer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5rem;
+    gap: 1rem;
+}
+
+#thirdlayer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    width: 100%;
+    gap: 1rem;
+}
+
+#thirdlayerRight, #thirdlayerLeft {
+    width: 50%;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+#biologicalInfo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    padding: 20px 0px 20px 0px;
+    background-color: #3D7DCA;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: #ffffff;
+}
+
+#biologicalInfo h3 {
+    margin: 0;
+    padding-top: 10px;
+    color: #FFCB05;
+}
+
+#biologicalInfo p {
+    margin: 0;
+    color: #ffffff;
+}
+
+#weaknesses, #types, #stats, #eggGroups{
+    padding: 20px 0px 0px 20px;
+}
+
+#stats {
+    border-radius: 20px;
+    background-color: #3D7DCA;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+#stats h2 {
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffffff;
+    color: #FFCB05;
+}
+
+#stats h4 {
+    margin: 0;
+    padding-top: 10px;
+    color: #B3A125; 
+}
+
+#stats p {
+    margin: 0;
+    padding-left: 10px;
+    color: #ffffff; 
+}
+
+#statsContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px 20px 20px 0px;
+    color: #ffffff; 
+}
+
+.evolutionPokemonImage {
+    width: 100px;
+    height: 100px;
+}
+
+#evolutionChainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#evolutionChain {
+    text-align: center;
+    border-radius: 20px;
+    background-color: #3D7DCA;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    color: #FFCB05;
+    width: 100%;
+    padding-top: 10px;
+}
+
+#evolutionChain h2 {
+    margin-bottom: 20px;
+}
+
+.evolutionStage {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.evolutionPokemon {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
+.evolutionPokemon h3 {
+    margin: 0 0 10px 0;
+    color: #666;
+}
+
+.evolutionPokemonImage {
+    max-width: 100%;
+    height: auto;
+}
+
+.evolutionStage {
+    position: relative;
+    margin-right: 20px;
+}
+
+.evolutionStage::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid black;
+}
+
+.evolutionStage:last-child::after {
+    content: none;
+}
+
+.evolutionStage:last-child {
+    margin-right: 0;
+}

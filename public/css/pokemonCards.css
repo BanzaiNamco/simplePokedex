@@ -3,9 +3,8 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 7rem;
     flex-direction: column;
-
 }
 
 #pokemon-container {
@@ -20,12 +19,15 @@
 .pokemon-card {
     margin: auto;
     border-radius: 2rem;
-    border: 1px solid red;
     width: 20rem;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-bottom: 1rem;
+    background-color: rgb(226, 217, 217);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    color: black;
+    cursor: pointer;
 }
 
 .pokemon-image-container img{
@@ -41,31 +43,6 @@
     align-items: center;
 }
 
-.pokemon-type-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.pokemon-types {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-    flex-wrap: wrap;
-}
-
-.pokemon-types li{
-    margin: 0.2rem;
-    padding: 0.3rem;
-    border-radius: 5px;
-    color: white;
-    min-width: 6rem;
-    max-width: 6rem;
-    text-align: center;
-}
-
 .pokemon-name {
     margin: 0;
     padding: 0;
@@ -73,4 +50,8 @@
 
 p {
     margin: 0;
+}
+
+.pokemon-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }

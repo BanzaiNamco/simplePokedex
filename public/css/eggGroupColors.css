@@ -1,0 +1,47 @@
+li.monster {
+    background-color: #d25064;
+}
+
+li.humanshape {
+    background-color: #d29682;
+}
+
+li.water1 {
+    background-color: #97b5fd;
+}
+
+li.water3 {
+    background-color: #5876be;
+}
+
+li.bug {
+    background-color: #aac22a;
+}
+
+li.mineral {
+    background-color: #7a6252;
+}
+
+li.indeterminate {
+    background-color: #8a8a8a;
+}
+
+li.water2 {
+    background-color: #729afa;
+}
+
+li.fairy {
+    background: #ffc8f0;
+}
+
+li.ditto {
+    background-color: #a664bf;
+}
+
+li.plant {
+    background-color: #82d25a;
+}
+
+li.no-eggs {
+    background-color: #333333;
+}
