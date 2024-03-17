@@ -1,0 +1,29 @@
+<!-- make html template -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pokedex</title>
+    <link rel="stylesheet" type="text/css" href="/css/generic.css">
+    <link rel="stylesheet" type="text/css" href="/css/typeColors.css">
+    <link rel="stylesheet" type="text/css" href="/css/eggGroupColors.css">
+    <link rel="stylesheet" type="text/css" href="/css/pokemonDetails.css">
+    <link rel="stylesheet" type="text/css" href="/css/nav.css">
+    <script src="/js/fetchFromAPI.js"></script>
+    <script src="/js/pokemonDetails.js"></script>
+    <script src="/js/search.js"></script>
+</head>
+<body>
+    <nav>
+        <a href = "/"><h1>Pokedex</h1></a>
+        <form id = "search-form">
+            <input type = "text" id = "search" placeholder = "Search Pokemon" autocomplete="off">
+            <button type = "submit">Search</button>
+        </form>
+        <div style = "display: hidden;">
+        </div>
+    </nav>
+    <div id = "entryContainer">
+        <h1>Loading Pokemon Info...</h1>
+        
+    </div> 
+</body>
